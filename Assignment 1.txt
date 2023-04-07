@@ -1,0 +1,51 @@
+04.07 15:29
+//LetsUpgrade_C_Assignment1
+
+//Five_Days_C_programming_Online_Bootcamp
+
+//Find_Largest_Among_Three_numbers - Using If, else if, else and nested if else.
+
+//Method 1:
+
+#include <stdio.h>
+int main() {
+    int num1,num2,num3;
+    printf("Enter your three inputs:\n");
+    scanf("%d %d %d",&num1,&num2,&num3);
+    if((num1>=num2) && (num1>=num3))
+    printf("The Largest Number is: %d\n",num1);
+    else if((num2>=num1) &&(num2>=num3))
+    printf("The Largest Number is:%d\n",num2);
+    else
+    printf("The Largest Number is:%d\n",num3);
+    
+    return 0;
+}
+
+
+
+
+
+//Method 2:
+
+#include <stdio.h>
+int main() {
+    double num1,num2,num3;
+    printf("Enter your three inputs:\n");
+    scanf("%lf %lf %lf",&num1,&num2,&num3);
+    if(num1>=num2)
+    {
+        if(num1>=num3)
+        printf("The Largest Number is: %.2lf\n",num1);
+        else
+        printf("The Largest Number is: %.2lf\n",num3);
+    }
+
+    else
+    {
+        if(num2>=num3)
+        printf("The Largest Number is:%.2lf\n",num2);
+        printf("The Largest Number is:%.2lf\n",num3);
+    }
+    return 0;
+}
