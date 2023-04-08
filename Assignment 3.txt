@@ -1,0 +1,21 @@
+// LetsUpgrade Day5 Assignment 3
+
+//program in C that uses a for loop to print out the multiplication table of a given number entered by the user.
+
+
+#include <stdio.h>
+
+int main() {
+    int N, range, i;
+    printf("Enter your input:");
+    scanf("%d",&N);
+    
+ 
+    printf("Enter Range(positive integer):");
+    scanf("%d\n",&range);
+    
+    for(i=1;i<=range;i++)
+    printf("%d * %d = %d\n",N,i,N*i);
+
+    return 0;
+}
